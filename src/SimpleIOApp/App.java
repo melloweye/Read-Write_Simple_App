@@ -1,3 +1,5 @@
+package SimpleIOApp;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +8,8 @@ public class App {
     public static void main(String[] args) {
 
         List<String> shoppingRequest = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/Input.txt"));
-             BufferedWriter writer = new BufferedWriter(new FileWriter("src/Output.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("src/SimpleIOApp/Input.txt"));
+             BufferedWriter writer = new BufferedWriter(new FileWriter("src/SimpleIOApp/Output.txt"))) {
             String line;
 
             List<Person> persons = readPersonsFromLine(reader);
